@@ -1,12 +1,12 @@
 -- Setup --
-    [ ] - Create your data base and tables using provided database.sql
-    [ ] - npm install
-    [ ] - npm install react-redux
-    [ ] - npm install redux-logger
-    [ ] - npm install react-router-dom
-    [ ] - npm run server
-        [ ] - npm run client after server is up and running
-    [ ] - Make components
+    [x] - Create your data base and tables using provided database.sql
+    [x] - npm install
+    [x] - npm install react-redux
+    [x] - npm install redux-logger
+    [x] - npm install react-router-dom
+    [x] - npm run server -- project working upon installs
+        [x] - npm run client after server is up and running -- client working upon installs
+    [x] - Make components
         [ ] - index.js
             [ ] - import {createStore, combineReducers, applyMiddleware} from 'redux';
             [ ] - import {Provider} from 'react-redux';
