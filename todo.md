@@ -8,18 +8,18 @@
         [x] - npm run client after server is up and running -- client working upon installs
     [x] - Make components
         [ ] - index.js
-            [ ] - import {createStore, combineReducers, applyMiddleware} from 'redux';
-            [ ] - import {Provider} from 'react-redux';
-            [ ] - import logger from 'redux-logger';
-            [ ] - Create Store
-                [ ] - Wrap with combineReducers
+            [x] - import {createStore, combineReducers, applyMiddleware} from 'redux';
+            [x] - import {Provider} from 'react-redux';
+            [x] - import logger from 'redux-logger';
+            [x] - Create Store
+                [x] - Wrap with combineReducers
                     [ ] - Pass in reducers
-                [ ] - applyMiddleware
-                    [ ] - logger
-            [ ] - React.DOM.render
-                [ ] - React.StrictMode?
-                [ ] - Wrap the app in a `<Provider> and give the provider a store -> <Provider store={store}>`
-                [ ] - Service Worker?
+                [x] - applyMiddleware
+                    [x] - logger
+            [x] - React.DOM.render
+                [x] - React.StrictMode -- tool for highlighting potential problems
+                [x] - Wrap the app in a `<Provider> and give the provider a store -> <Provider store={store}>`
+                [x] - Service Worker -- provided for project
 
             [ ] - App.jsx
                 [ ] - Import {Route, HashRouter as Router} from 'react-router-dom'
