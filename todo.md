@@ -22,7 +22,7 @@
                 [x] - Service Worker -- provided for project
 
             [ ] - App.jsx
-                [ ] - Import {Route, HashRouter as Router} from 'react-router-dom'
+                [x] - Import {Route, HashRouter as Router} from 'react-router-dom'
                 [ ] - Wrap the app in a <Router>
                 [ ] - Client
                     [ ] - Make Routes through the different pages
