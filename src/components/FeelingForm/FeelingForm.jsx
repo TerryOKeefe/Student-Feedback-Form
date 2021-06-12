@@ -1,6 +1,6 @@
-import {useState} from 'react';
-import {useDispatch} from 'react-redux';
-import {useHistory} from 'react-router-dom';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import './FeelingForm.css';
@@ -20,8 +20,8 @@ function FeelingForm() {
 
         // dispatch the new data to store
         dispatch({
-            type : 'ADD_FEELING',
-            payload : newFeel
+            type: 'ADD_FEELING',
+            payload: newFeel
         });
 
         // on click change to understanding route
@@ -47,7 +47,7 @@ function FeelingForm() {
                     value={newFeel}
                     onChange={(event) => setNewFeel(event.target.value)}
                 />
-                <Button 
+                <Button
                     size="medium"
                     variant="contained"
                     color="primary"

@@ -112,7 +112,7 @@
         [ ] - Improve the styling using Material-UI
             [ ] - Cards?
             [ ] - Nav bar?
-            [ ] - Buttons
+            [x] - Buttons
             [ ] - Icons
             [ ] - Theme
     [ ] - Admin Section
