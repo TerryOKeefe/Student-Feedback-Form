@@ -14,6 +14,7 @@ import SupportForm from '../SupportForm/SupportForm';
 import CommentForm from '../CommentForm/CommentForm';
 import ReviewFeedback from '../ReviewFeedback/ReviewFeedback';
 import Submission from '../Submission/Submission';
+import Admin from '../Admin/Admin';
 
 function App() {
 
@@ -41,6 +42,9 @@ function App() {
         </Route>
         <Route path="/submission">
           <Submission />
+        </Route>
+        <Route path="/admin">
+          <Admin />
         </Route>
       </Router>
     </div>

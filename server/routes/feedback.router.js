@@ -10,26 +10,45 @@ router.post('/', (req, res) => {
     console.log(req.body);
     // variable for req.body
     let feedback = req.body;
-    
+
     // query to send to database with sanitized values
-    const  queryText = `INSERT INTO "feedback"
+    const queryText = `INSERT INTO "feedback"
         ("feeling", "understanding", "support", "comments")
         VALUES($1, $2, $3, $4);`;
-    
+
     // pool query with inputs from components
     pool.query(queryText, [
-        feedback.feeling, 
-        feedback.understanding, 
-        feedback.support, 
+        feedback.feeling,
+        feedback.understanding,
+        feedback.support,
         feedback.comments
     ])
+        .then((result) => {
+            // send created status
+            res.sendStatus(201);
+            console.log('Result from POST', result);
+        })
+        .catch((error) => {
+            console.log('Error in POST', error);
+        })
+})
+
+// GET
+router.get('/', (req, res) => {
+    // query to run in database
+    let queryText = `
+        SELECT "feeling", "understanding", "support", "comments"
+        FROM "feedback"
+        ORDER BY "id" DESC;`
+        ;
+    // pool query to send to database
+    pool.query(queryText)
     .then( (result) => {
-        // send created status
-        res.sendStatus(201);
-        console.log('Result from POST', result);
+        res.send(result.rows);
     })
     .catch( (error) => {
-        console.log('Error in POST', error);
+        console.log('Error in GET router', error);
+        res.sendStatus(500);
     })
 })
 
