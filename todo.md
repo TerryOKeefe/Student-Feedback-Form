@@ -69,17 +69,20 @@
         -- Review Your Feedback --
             [x] - /review route
             [x] - `<h1>Review Your Feedback</h1>`
-                [ ] - <h3>Feelings: {input rating}
-                [ ] - <h3>Understanding: {input rating}
-                [ ] - <h3>Support: {input rating}
-                [ ] - <h3>Comments: {input comments}
+                [x] - <h3>Feelings: {input rating}
+                [x] - <h3>Understanding: {input rating}
+                [x] - <h3>Support: {input rating}
+                [x] - <h3>Comments: {input comments}
             [ ] - Submit button
+                [ ] - On submit send data to the database
+                [ ] - Send user to /submission route
 
         -- Save The Submission --
             [ ] - /submission route
             [ ] - <h1>Feedback!<h1>
             [ ] - <h2>Thank You!</h2>
             [ ] - Leave New Feedback button -- <button>Leave New Feedback</button>
+                [ ] - reset data and send user to home page
 
 -- Extra Notes --
     [x] - No nav bar, each part of form should be its own route.
