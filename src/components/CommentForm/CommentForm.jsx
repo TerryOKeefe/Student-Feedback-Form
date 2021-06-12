@@ -13,9 +13,7 @@ function CommentForm() {
     const history = useHistory();
 
     // variable to take in rating
-    const newComments = {
-        comments : newComment
-    };
+    const newComments = newComment;
 
     // function to dispatch comment
     const commentSubmit = (event) => {

@@ -13,9 +13,7 @@ function UnderstandingForm() {
     const history = useHistory();
 
     // create a variable to take in rating
-    const newUnderstanding = {
-        understanding : newUnderstand
-    };
+    const newUnderstanding = newUnderstand;
 
     // function to dispatch understanding rating
     const understandingSubmit = (event) => {

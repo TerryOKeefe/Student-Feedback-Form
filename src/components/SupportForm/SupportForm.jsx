@@ -13,9 +13,7 @@ function SupportForm() {
     const history = useHistory();
 
     // create a variable to take in rating
-    const newSupports = {
-        support : newSupport
-    }
+    const newSupports = newSupport;
 
     // function to dispatch support rating
     const supportSubmit = (event) => {
