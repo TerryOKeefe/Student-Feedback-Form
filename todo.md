@@ -20,23 +20,21 @@
                 [x] - React.StrictMode -- tool for highlighting potential problems
                 [x] - Wrap the app in a `<Provider> and give the provider a store -> <Provider store={store}>`
                 [x] - Service Worker -- provided for project
-
             [x] - App.jsx
                 [x] - Import {Route, HashRouter as Router} from 'react-router-dom'
                 [x] - Wrap the app in a <Router>
                 [x] - Client
                     [x] - Make Routes through the different pages
-                [ ] - Admin -- STRETCH GOAL
-                    [ ] - Make Routes through the different pages
+                [x] - Admin -- STRETCH GOAL
+                    [x] - Make Routes through the different pages
+                    [x] - Route not shown nor button that leads to it
 
 -- Wire Frame for each page/view
     [x] - Header -- Feedback!
         [x] - Under Header -- Don't Forget It!
-
     -- Welcome Page? --
         [x] - Brief description
         [x] - Start button -- should move the user to /feeling
-
     -- Add New Feedback --
         -- How are you feeling today? --
             [x] - /feeling route
@@ -44,28 +42,24 @@
             [x] - `<h4>Feeling?</h4>`
             [x] - Input field to take in a number
             [x] - Next button -- should move the user to /understanding
-
         -- How well are you understanding the content? --
             [x] - /understanding route
             [x] - `<h2>How well are you understanding the content?</h2>`
             [x] - `<h4>Understanding?</h4>`
             [x] - Input field to take in a number
             [x] - Next button -- should move the user to /support
-
         -- How well are you being supported? --
             [x] - /support route
             [x] - `<h2>How well are you being supported?</h2>`
             [x] - `<h4>Support?</h4>`
             [x] - Input field to take in a number
             [x] - Next button -- should move the user to /comment
-
         -- Any comments you want to leave? --
             [x] - /comment route
             [x] - `<h2>Any comments you want to leave?</h2>`
             [x] - `<h4>Comments</h4>`
             [x] - Input field to take in text
             [x] - Next button -- should move the user to /review
-
         -- Review Your Feedback --
             [x] - /review route
             [x] - `<h1>Review Your Feedback</h1>`
@@ -76,7 +70,6 @@
             [ ] - Submit button
                 [x] - On submit send data to the database
                 [x] - Send user to /submission route
-
         -- Save The Submission --
             [x] - /submission route
             [x] - <h1>Feedback!<h1>
@@ -109,16 +102,16 @@
         [ ] - Allow the user to go back to the previous step and change their score
             [ ] - Disallow empty values to do this part
     [ ] - Styling
-        [ ] - Improve the styling using Material-UI
+        [x] - Improve the styling using Material-UI
             [ ] - Cards?
             [ ] - Nav bar?
             [x] - Buttons
             [ ] - Icons
             [ ] - Theme
     [ ] - Admin Section
-        [ ] - /admin route
-            [ ] - Display all existing feedback
-            [ ] - Most recent feedback should display on top of the list
+        [x] - /admin route
+            [x] - Display all existing feedback
+            [x] - Most recent feedback should display on top of the list
             [ ] - Allow user to delete existing feedback
                 [ ] - Alert user to confirm prior to deleting feedback from database
             [ ] - Ability to flag existing feedback entry for further review
@@ -128,7 +121,7 @@
 
 -- Import For Styling --
     [ ] - Material UI ?
-        [ ] - npm install @material-ui/core
+        [x] - npm install @material-ui/core
         [ ] - npm install @material-ui/icons
         [ ] - npm install @fontsource/roboto
             [ ] - import '@fontsource/roboto'
