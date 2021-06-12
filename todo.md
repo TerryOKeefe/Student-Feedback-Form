@@ -82,7 +82,7 @@
             [ ] - Leave New Feedback button -- <button>Leave New Feedback</button>
 
 -- Extra Notes --
-    [ ] - No nav bar, each part of form should be its own route.
+    [x] - No nav bar, each part of form should be its own route.
         [ ] - Clicking next should move user to the appropriate step in the process
     [ ] - Each step should only allow user to advance to the next step if a score was provided.
         [ ] - Alert user that a value must be provided.
