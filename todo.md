@@ -25,7 +25,7 @@
                 [x] - Import {Route, HashRouter as Router} from 'react-router-dom'
                 [x] - Wrap the app in a <Router>
                 [ ] - Client
-                    [ ] - Make Routes through the different pages
+                    [x] - Make Routes through the different pages
                 [ ] - Admin
                     [ ] - Make Routes through the different pages
 
