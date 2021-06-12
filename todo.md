@@ -30,17 +30,17 @@
                     [ ] - Make Routes through the different pages
 
 -- Wire Frame for each page/view
-    [ ] - Header -- Feedback!
-        [ ] - Under Header -- Don't Forget It!
+    [x] - Header -- Feedback!
+        [x] - Under Header -- Don't Forget It!
 
     -- Welcome Page? --
-        [ ] - Brief description
-        [ ] - Start button -- should move the user to /feeling
+        [x] - Brief description
+        [x] - Start button -- should move the user to /feeling
 
     -- Add New Feedback --
         -- How are you feeling today? --
-            [ ] - /feeling route
-            [ ] - `<h2>How are you feeling today?</h2>`
+            [x] - /feeling route
+            [x] - `<h2>How are you feeling today?</h2>`
             [ ] - `<h4>Feeling?</h4>`
             [ ] - Input field to take in a number
             [ ] - Next button -- should move the user to /understanding
