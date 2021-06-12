@@ -6,6 +6,9 @@ import './ReviewFeedback.css';
 function ReviewFeedback() {
     // import data from store
     const reviewList = useSelector(store => store.feedbackReducer)
+    // console log
+    console.log(reviewList[reviewList.feeling]);
+
     
     return (
         <div>
@@ -13,10 +16,10 @@ function ReviewFeedback() {
                 <h2>Review Your Feedback</h2>
             </div>
             <div>
-                <h3>Feelings: </h3>
-                <h3>Understanding: </h3>
-                <h3>Support: </h3>
-                <h3>Comments: </h3>
+                <h3>Feelings: {reviewList[0].feeling}</h3>
+                <h3>Understanding: {reviewList[1].understanding}</h3>
+                <h3>Support: {reviewList[2].support}</h3>
+                <h3>Comments: {reviewList[3].comments}</h3>
                 <button>Submit</button>
             </div>
         </div>
