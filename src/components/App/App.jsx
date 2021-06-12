@@ -42,7 +42,6 @@ function App() {
         <Route path="/submission">
           <Submission />
         </Route>
-        
       </Router>
     </div>
   );

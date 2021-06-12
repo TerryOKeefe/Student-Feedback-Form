@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 import './SupportForm.css';
 
 // function for SupportForm component
@@ -40,14 +42,24 @@ function SupportForm() {
                 <h2>How well are you being supported?</h2>
             </div>
             <form onSubmit={supportSubmit}>
-                <input 
+                <TextField
+                id="standard-basic"
+                label="Support Rating"
                 type="number"
                 required="required"
-                placeholder="Support?"
+                placeholder="1-10"
                 value={newSupport}
                 onChange={(event) => setNewSupport(event.target.value)}
                 />
-                <input type="submit" value="Next" />
+                <Button 
+                    size="medium"
+                    variant="contained"
+                    color="primary"
+                    type="submit" 
+                    value="Next" 
+                >
+                    Next
+                </Button>
             </form>
         </div>
     )

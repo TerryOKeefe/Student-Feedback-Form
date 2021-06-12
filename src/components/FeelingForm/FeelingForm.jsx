@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 import './FeelingForm.css';
 
 // function for FeelingForm component
@@ -36,14 +38,23 @@ function FeelingForm() {
             </div>
             {/* <h4>Feeling?</h4> */}
             <form onSubmit={feelingSubmit}>
-                <input
+                <TextField
+                    id="standard-basic"
+                    label="Feeling Rating"
                     type="number"
                     required="required"
-                    placeholder="Feeling?"
+                    placeholder="1-10"
                     value={newFeel}
                     onChange={(event) => setNewFeel(event.target.value)}
                 />
-                <input type="submit" value="Next" />
+                <Button 
+                    size="medium"
+                    variant="contained"
+                    color="primary"
+                    type="submit"
+                >
+                    Next
+                </Button>
             </form>
         </div>
     )
