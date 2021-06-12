@@ -26,12 +26,14 @@ function SupportForm() {
             type : 'ADD_SUPPORT',
             payload : newSupports
         });
+
+        // on click change to comment route
+        history.push('/comment');
     } // end supportSubmit
 
     // handle click to take us to /comment
     const handleClick = () => {
-        // on click change to comment route
-        history.push('/comment');
+
     } // end handleClick
 
     // console log to see that the rating shows
@@ -49,7 +51,7 @@ function SupportForm() {
                 value={newSupport}
                 onChange={(event) => setNewSupport(event.target.value)}
                 />
-                <button onClick={handleClick}>Next</button>
+                <input type="submit" value="Next" />
             </form>
         </div>
     )
