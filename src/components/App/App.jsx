@@ -6,6 +6,7 @@ import './App.css';
 import {Route, HashRouter as Router} from 'react-router-dom';
 
 // import components
+import Header from '../Header/Header';
 import Home from '../Home/Home';
 import FeelingForm from '../FeelingForm/FeelingForm';
 import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
@@ -18,10 +19,7 @@ function App() {
 
   return (
     <div className='App'>
-      <header className='App-header'>
-        <h1 className='App-title'>Feedback!</h1>
-        <h4>Don't forget it!</h4>
-      </header>
+      <Header />
       <Router>
         <Route path="/" exact>
           <Home />
