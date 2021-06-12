@@ -14,6 +14,8 @@ const feedbackReducer = (state = [], action) => {
     switch(action.type) {
         case 'ADD_FEELING' :
             return [...state, action.payload];
+        case 'ADD_UNDERSTAND' :
+            return [...state, action.payload];
         default :
             return state;
     }
