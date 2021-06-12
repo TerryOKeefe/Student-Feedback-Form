@@ -8,7 +8,7 @@ import {Route, HashRouter as Router} from 'react-router-dom';
 // import components
 import Home from '../Home/Home';
 import FeelingForm from '../FeelingForm/FeelingForm';
-
+import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
 
 function App() {
 
@@ -24,6 +24,9 @@ function App() {
         </Route>
         <Route path="/feeling">
           <FeelingForm />
+        </Route>
+        <Route path="/understanding">
+          <UnderstandingForm />
         </Route>
         
       </Router>

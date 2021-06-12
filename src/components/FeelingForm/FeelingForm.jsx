@@ -26,7 +26,7 @@ function FeelingForm() {
         dispatch({
             type : 'ADD_FEELING',
             payload : newFeeling
-        })
+        });
     } // end feelingSubmit
 
     // handle click to take us to /understanding route
