@@ -9,6 +9,7 @@ import {Route, HashRouter as Router} from 'react-router-dom';
 import Home from '../Home/Home';
 import FeelingForm from '../FeelingForm/FeelingForm';
 import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
+import SupportForm from '../SupportForm/SupportForm';
 
 function App() {
 
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="/understanding">
           <UnderstandingForm />
+        </Route>
+        <Route path="/support">
+          <SupportForm />
         </Route>
         
       </Router>
