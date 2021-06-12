@@ -53,11 +53,11 @@
             [x] - Next button -- should move the user to /support
 
         -- How well are you being supported? --
-            [ ] - /support route
-            [ ] - `<h2>How well are you being supported?</h2>`
-            [ ] - `<h4>Support?</h4>`
-            [ ] - Input field to take in a number
-            [ ] - Next button -- should move the user to /comment
+            [x] - /support route
+            [x] - `<h2>How well are you being supported?</h2>`
+            [x] - `<h4>Support?</h4>`
+            [x] - Input field to take in a number
+            [x] - Next button -- should move the user to /comment
 
         -- Any comments you want to leave? --
             [ ] - /comment route
