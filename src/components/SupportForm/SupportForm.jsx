@@ -47,6 +47,7 @@ function SupportForm() {
             <form onSubmit={supportSubmit}>
                 <input 
                 type="number"
+                required="required"
                 placeholder="Support?"
                 value={newSupport}
                 onChange={(event) => setNewSupport(event.target.value)}
