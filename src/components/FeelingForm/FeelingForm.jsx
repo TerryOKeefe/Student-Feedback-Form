@@ -27,13 +27,10 @@ function FeelingForm() {
             type : 'ADD_FEELING',
             payload : newFeeling
         });
-    } // end feelingSubmit
 
-    // handle click to take us to /understanding route
-    const handleClick = () => {
         // on click change to understanding route
         history.push('/understanding');
-    }
+    } // end feelingSubmit
 
     // console log to see that the value shows in log
     console.log('Feeling Rating:', newFeel);
@@ -51,7 +48,7 @@ function FeelingForm() {
                     value={newFeel}
                     onChange={(event) => setNewFeel(event.target.value)}
                 />
-                <button onClick={handleClick}>Next</button>
+                <input type="submit" value="Next" />
             </form>
         </div>
     )

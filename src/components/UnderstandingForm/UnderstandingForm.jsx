@@ -26,13 +26,10 @@ function UnderstandingForm() {
             type : 'ADD_UNDERSTAND',
             payload : newUnderstanding
         });
-    } // end understandingSubmit
 
-    // handle click to take us to /support
-    const handleClick = () => {
         // on click change to support route
         history.push('/support');
-    }
+    } // end understandingSubmit
 
     // console log to see that the value shows
     console.log('Understanding Rating:', newUnderstand);
@@ -49,7 +46,7 @@ function UnderstandingForm() {
                     value={newUnderstand}
                     onChange={(event) => setNewUnderstand(event.target.value)}
                 />
-                <button onClick={handleClick}>Next</button>
+                <input type="submit" value="Next" />
             </form>
         </div>
     )
