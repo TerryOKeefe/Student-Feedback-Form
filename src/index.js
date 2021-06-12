@@ -10,16 +10,16 @@ import {Provider} from 'react-redux';
 import logger from 'redux-logger';
 
 // feedback reducer
-const feedbackReducer = (state = [], action) => {
+const feedbackReducer = (state = {}, action) => {
     switch(action.type) {
         case 'ADD_FEELING' :
-            return [...state, action.payload];
+            return {...state, feeling: action.payload};
         case 'ADD_UNDERSTAND' :
-            return [...state, action.payload];
+            return {...state, understanding: action.payload};
         case 'ADD_SUPPORT' :
-            return [...state, action.payload];
+            return {...state, support: action.payload};
         case 'ADD_COMMENT' :
-            return [...state, action.payload];
+            return {...state, comments: action.payload};
         case 'SUBMISSION' :
             return [];
         default :

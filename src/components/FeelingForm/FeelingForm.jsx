@@ -13,9 +13,7 @@ function FeelingForm() {
     const history = useHistory();
 
     // create variable to take in rating
-    const newFeeling = {
-        feeling : newFeel
-    };
+    const newFeeling = newFeel;
 
     // function to dispatch feeling rating
     const feelingSubmit = (event) => {
