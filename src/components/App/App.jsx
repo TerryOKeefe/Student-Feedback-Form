@@ -10,6 +10,7 @@ import Home from '../Home/Home';
 import FeelingForm from '../FeelingForm/FeelingForm';
 import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
 import SupportForm from '../SupportForm/SupportForm';
+import CommentForm from '../CommentForm/CommentForm';
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route path="/support">
           <SupportForm />
+        </Route>
+        <Route path="/comment">
+          <CommentForm />
         </Route>
         
       </Router>
