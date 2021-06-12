@@ -12,6 +12,7 @@ import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
 import SupportForm from '../SupportForm/SupportForm';
 import CommentForm from '../CommentForm/CommentForm';
 import ReviewFeedback from '../ReviewFeedback/ReviewFeedback';
+import Submission from '../Submission/Submission';
 
 function App() {
 
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route path="/review">
           <ReviewFeedback />
+        </Route>
+        <Route path="/submission">
+          <Submission />
         </Route>
         
       </Router>
