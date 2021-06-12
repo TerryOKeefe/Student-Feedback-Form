@@ -43,6 +43,7 @@ function FeelingForm() {
             <form onSubmit={feelingSubmit}>
                 <input
                     type="number"
+                    required="required"
                     placeholder="Feeling?"
                     value={newFeel}
                     onChange={(event) => setNewFeel(event.target.value)}

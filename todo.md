@@ -69,29 +69,32 @@
         -- Review Your Feedback --
             [x] - /review route
             [x] - `<h1>Review Your Feedback</h1>`
-                [ ] - <h3>Feelings: {input rating}
-                [ ] - <h3>Understanding: {input rating}
-                [ ] - <h3>Support: {input rating}
-                [ ] - <h3>Comments: {input comments}
+                [x] - <h3>Feelings: {input rating}
+                [x] - <h3>Understanding: {input rating}
+                [x] - <h3>Support: {input rating}
+                [x] - <h3>Comments: {input comments}
             [ ] - Submit button
+                [ ] - On submit send data to the database
+                [ ] - Send user to /submission route
 
         -- Save The Submission --
             [ ] - /submission route
             [ ] - <h1>Feedback!<h1>
             [ ] - <h2>Thank You!</h2>
             [ ] - Leave New Feedback button -- <button>Leave New Feedback</button>
+                [ ] - reset data and send user to home page
 
 -- Extra Notes --
     [x] - No nav bar, each part of form should be its own route.
         [ ] - Clicking next should move user to the appropriate step in the process
-    [ ] - Each step should only allow user to advance to the next step if a score was provided.
-        [ ] - Alert user that a value must be provided.
-    [ ] - Comment step does not need an alert.
-        [ ] - It can be empty if user chooses so.
-    [ ] - Review Component to allow user to review their feedback
-        [ ] - Users are not able to change their input on this step
-        [ ] - Users are not able to go back for base mode.
-    [ ] - Review step needs to have a submit button.
+    [x] - Each step should only allow user to advance to the next step if a score was provided.
+        [x] - Alert user that a value must be provided.
+    [x] - Comment step does not need an alert.
+        [x] - It can be empty if user chooses so.
+    [x] - Review Component to allow user to review their feedback
+        [x] - Users are not able to change their input on this step
+        [x] - Users are not able to go back for base mode.
+    [x] - Review step needs to have a submit button.
         [ ] - This sends feedback to the server.
         [ ] - On submit click save the data to the database.
         [ ] - User should see a success page. /submission route

@@ -42,6 +42,7 @@ function UnderstandingForm() {
             <form onSubmit={understandingSubmit}>
                 <input 
                     type="number"
+                    required="required"
                     placeholder="Understanding?"
                     value={newUnderstand}
                     onChange={(event) => setNewUnderstand(event.target.value)}
