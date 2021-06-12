@@ -6,14 +6,11 @@ import './SupportForm.css';
 // function for SupportForm component
 function SupportForm() {
     // variable to hold support input
-    const [newSupport, setNewSupport] = useState();
+    const [newSupport, setNewSupport] = useState('');
 
     // variables for dispatch and useHistory
     const dispatch = useDispatch();
     const history = useHistory();
-
-    // create a variable to take in rating
-    const newSupports = newSupport;
 
     // function to dispatch support rating
     const supportSubmit = (event) => {
@@ -22,7 +19,7 @@ function SupportForm() {
         // dispatch the new data to store
         dispatch({
             type : 'ADD_SUPPORT',
-            payload : newSupports
+            payload : newSupport
         });
 
         // on click change to comment route

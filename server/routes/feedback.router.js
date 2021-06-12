@@ -7,18 +7,18 @@ const pool = require('../modules/pool');
 router.post('/', (req, res) => {
     // console log in terminal
     console.log('In POST');
-
+    console.log(req.body);
     // variable for req.body
     let feedback = req.body;
     
-    // query to send to database
+    // query to send to database with sanitized values
     const  queryText = `INSERT INTO "feedback"
         ("feeling", "understanding", "support", "comments")
         VALUES($1, $2, $3, $4);`;
     
-    // pool query
+    // pool query with inputs from components
     pool.query(queryText, [
-        feedback.feelings, 
+        feedback.feeling, 
         feedback.understanding, 
         feedback.support, 
         feedback.comments

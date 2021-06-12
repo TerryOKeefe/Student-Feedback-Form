@@ -6,14 +6,11 @@ import './CommentForm.css';
 // function for CommentForm component
 function CommentForm() {
     // variable to hold input
-    const [newComment, setNewComment] = useState();
+    const [newComment, setNewComment] = useState('');
 
     // variables for dispatch and useHistory
     const dispatch = useDispatch();
     const history = useHistory();
-
-    // variable to take in rating
-    const newComments = newComment;
 
     // function to dispatch comment
     const commentSubmit = (event) => {
@@ -22,7 +19,7 @@ function CommentForm() {
         // dispatch the new comment to store
         dispatch({
             type : 'ADD_COMMENT',
-            payload : newComments
+            payload : newComment
         });
 
         // on submit change to /review route

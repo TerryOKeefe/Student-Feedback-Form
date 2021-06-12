@@ -7,13 +7,13 @@
     [x] - npm run server -- project working upon installs
         [x] - npm run client after server is up and running -- client working upon installs
     [x] - Make components
-        [ ] - index.js
+        [x] - index.js
             [x] - import {createStore, combineReducers, applyMiddleware} from 'redux';
             [x] - import {Provider} from 'react-redux';
             [x] - import logger from 'redux-logger';
             [x] - Create Store
                 [x] - Wrap with combineReducers
-                    [ ] - Pass in reducers
+                    [x] - Pass in reducers
                 [x] - applyMiddleware
                     [x] - logger
             [x] - React.DOM.render
@@ -21,12 +21,12 @@
                 [x] - Wrap the app in a `<Provider> and give the provider a store -> <Provider store={store}>`
                 [x] - Service Worker -- provided for project
 
-            [ ] - App.jsx
+            [x] - App.jsx
                 [x] - Import {Route, HashRouter as Router} from 'react-router-dom'
                 [x] - Wrap the app in a <Router>
-                [ ] - Client
+                [x] - Client
                     [x] - Make Routes through the different pages
-                [ ] - Admin
+                [ ] - Admin -- STRETCH GOAL
                     [ ] - Make Routes through the different pages
 
 -- Wire Frame for each page/view
@@ -74,8 +74,8 @@
                 [x] - <h3>Support: {input rating}
                 [x] - <h3>Comments: {input comments}
             [ ] - Submit button
-                [ ] - On submit send data to the database
-                [ ] - Send user to /submission route
+                [x] - On submit send data to the database
+                [x] - Send user to /submission route
 
         -- Save The Submission --
             [x] - /submission route
@@ -86,7 +86,7 @@
 
 -- Extra Notes --
     [x] - No nav bar, each part of form should be its own route.
-        [ ] - Clicking next should move user to the appropriate step in the process
+        [x] - Clicking next should move user to the appropriate step in the process
     [x] - Each step should only allow user to advance to the next step if a score was provided.
         [x] - Alert user that a value must be provided.
     [x] - Comment step does not need an alert.
@@ -95,10 +95,10 @@
         [x] - Users are not able to change their input on this step
         [x] - Users are not able to go back for base mode.
     [x] - Review step needs to have a submit button.
-        [ ] - This sends feedback to the server.
-        [ ] - On submit click save the data to the database.
-        [ ] - User should see a success page. /submission route
-            [ ] - Leave New Feedback button to reset form so user can do another submission
+        [x] - This sends feedback to the server.
+        [x] - On submit click save the data to the database.
+        [x] - User should see a success page. /submission route
+            [x] - Leave New Feedback button to reset form so user can do another submission
 
 
 

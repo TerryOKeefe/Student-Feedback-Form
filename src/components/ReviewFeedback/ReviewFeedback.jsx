@@ -15,7 +15,7 @@ function ReviewFeedback() {
 
     // axios to send review to database
     const reviewSubmit = () => {
-        axios.post('/feedback', {reviewList})
+        axios.post('/feedback', reviewList)
         .then( (response) => {
             console.log('Response from POST', response);
         })

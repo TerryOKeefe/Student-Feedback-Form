@@ -6,14 +6,11 @@ import './UnderstandingForm.css';
 // function for UnderstandingForm component
 function UnderstandingForm() {
     // variable to hold input
-    const [newUnderstand, setNewUnderstand] = useState();
+    const [newUnderstand, setNewUnderstand] = useState('');
 
     // variable for dispatch and usehistory
     const dispatch = useDispatch();
     const history = useHistory();
-
-    // create a variable to take in rating
-    const newUnderstanding = newUnderstand;
 
     // function to dispatch understanding rating
     const understandingSubmit = (event) => {
@@ -22,7 +19,7 @@ function UnderstandingForm() {
         // dispatch the new data to store
         dispatch({
             type : 'ADD_UNDERSTAND',
-            payload : newUnderstanding
+            payload : newUnderstand
         });
 
         // on click change to support route

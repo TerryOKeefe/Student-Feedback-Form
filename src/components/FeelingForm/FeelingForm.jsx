@@ -6,14 +6,11 @@ import './FeelingForm.css';
 // function for FeelingForm component
 function FeelingForm() {
     // variable to hold input
-    const [newFeel, setNewFeel] = useState();
+    const [newFeel, setNewFeel] = useState('');
 
     // variable for dispatch
     const dispatch = useDispatch();
     const history = useHistory();
-
-    // create variable to take in rating
-    const newFeeling = newFeel;
 
     // function to dispatch feeling rating
     const feelingSubmit = (event) => {
@@ -22,7 +19,7 @@ function FeelingForm() {
         // dispatch the new data to store
         dispatch({
             type : 'ADD_FEELING',
-            payload : newFeeling
+            payload : newFeel
         });
 
         // on click change to understanding route

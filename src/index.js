@@ -21,7 +21,7 @@ const feedbackReducer = (state = {}, action) => {
         case 'ADD_COMMENT' :
             return {...state, comments: action.payload};
         case 'SUBMISSION' :
-            return [];
+            return state;
         default :
             return state;
     }
