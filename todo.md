@@ -104,7 +104,7 @@
 
 
 -- Stretch Goals --
-    [ ] - Base mode 100% DONE
+    [x] - Base mode 100% DONE
     [ ] - Update Scores
         [ ] - Allow the user to go back to the previous step and change their score
             [ ] - Disallow empty values to do this part
