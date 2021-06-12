@@ -23,7 +23,7 @@
 
             [ ] - App.jsx
                 [x] - Import {Route, HashRouter as Router} from 'react-router-dom'
-                [ ] - Wrap the app in a <Router>
+                [x] - Wrap the app in a <Router>
                 [ ] - Client
                     [ ] - Make Routes through the different pages
                 [ ] - Admin
@@ -60,15 +60,15 @@
             [x] - Next button -- should move the user to /comment
 
         -- Any comments you want to leave? --
-            [ ] - /comment route
-            [ ] - `<h2>Any comments you want to leave?</h2>`
-            [ ] - `<h4>Comments</h4>`
-            [ ] - Input field to take in text
-            [ ] - Next button -- should move the user to /review
+            [x] - /comment route
+            [x] - `<h2>Any comments you want to leave?</h2>`
+            [x] - `<h4>Comments</h4>`
+            [x] - Input field to take in text
+            [x] - Next button -- should move the user to /review
 
         -- Review Your Feedback --
-            [ ] - /review route
-            [ ] - `<h1>Review Your Feedback</h1>`
+            [x] - /review route
+            [x] - `<h1>Review Your Feedback</h1>`
                 [ ] - <h3>Feelings: {input rating}
                 [ ] - <h3>Understanding: {input rating}
                 [ ] - <h3>Support: {input rating}
