@@ -25,7 +25,7 @@
                 [x] - Import {Route, HashRouter as Router} from 'react-router-dom'
                 [x] - Wrap the app in a <Router>
                 [ ] - Client
-                    [ ] - Make Routes through the different pages
+                    [x] - Make Routes through the different pages
                 [ ] - Admin
                     [ ] - Make Routes through the different pages
 
@@ -78,11 +78,11 @@
                 [ ] - Send user to /submission route
 
         -- Save The Submission --
-            [ ] - /submission route
-            [ ] - <h1>Feedback!<h1>
-            [ ] - <h2>Thank You!</h2>
-            [ ] - Leave New Feedback button -- <button>Leave New Feedback</button>
-                [ ] - reset data and send user to home page
+            [x] - /submission route
+            [x] - <h1>Feedback!<h1>
+            [x] - <h2>Thank You!</h2>
+            [x] - Leave New Feedback button -- <button>Leave New Feedback</button>
+                [x] - reset data and send user to home page
 
 -- Extra Notes --
     [x] - No nav bar, each part of form should be its own route.
