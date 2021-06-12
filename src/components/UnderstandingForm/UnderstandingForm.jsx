@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 import './UnderstandingForm.css';
 
 // function for UnderstandingForm component
@@ -35,14 +37,24 @@ function UnderstandingForm() {
                 <h2>How well are you understanding the content?</h2>
             </div>
             <form onSubmit={understandingSubmit}>
-                <input 
+                <TextField
+                    id="standard-basic"
+                    label="Understand Rating" 
                     type="number"
                     required="required"
-                    placeholder="Understanding?"
+                    placeholder="1-10"
                     value={newUnderstand}
                     onChange={(event) => setNewUnderstand(event.target.value)}
                 />
-                <input type="submit" value="Next" />
+                <Button
+                    size="medium"
+                    variant="contained"
+                    color="primary"
+                    type="submit"
+                >
+                    Next
+                </Button>
+                    
             </form>
         </div>
     )

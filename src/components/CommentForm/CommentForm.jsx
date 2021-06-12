@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 import './CommentForm.css';
 
 // function for CommentForm component
@@ -35,14 +37,23 @@ function CommentForm() {
                 <h2>Any comments you want to leave?</h2>
             </div>
             <form onSubmit={commentSubmit}>
-                <input 
+                <TextField 
+                    id="standard-basic"
+                    label="Any Comments?"
                     type="text"
-                    placeholder="Comments?"
                     value={newComment}
                     onChange={(event) => setNewComment(event.target.value)}
                 />
-                <input type="submit" value="Next" />
+                <Button
+                    size="medium"
+                    variant="contained"
+                    color="primary"
+                    type="submit"
+                >
+                    Next
+                </Button>
             </form>
+            <h5>You can leave this empty</h5>
         </div>
     )
 } // end CommentForm
