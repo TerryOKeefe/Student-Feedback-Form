@@ -20,7 +20,7 @@ function Submission() {
         history.push('/')
     }
     return (
-        <div>
+        <div className="raisedBox">
             <div>
                 <h2>Submission Complete!</h2>
             </div>

@@ -1,9 +1,9 @@
 import React from 'react';
-import axios from 'axios';
 import './App.css';
 
 // import for project
 import {Route, HashRouter as Router} from 'react-router-dom';
+import '@fontsource/roboto';
 
 // import components
 import Header from '../Header/Header';
@@ -20,7 +20,9 @@ function App() {
 
   return (
     <div className='App'>
+      {/* Remove header and place in own component */}
       <Header />
+      {/* Use Router to place routes */}
       <Router>
         <Route path="/" exact>
           <Home />
@@ -51,4 +53,5 @@ function App() {
   );
 }
 
+// export App
 export default App;

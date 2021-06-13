@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #033076;
+  background-color: #148e77;
   min-height: 70px;
   padding: 20px;
   color: white;
@@ -11,7 +11,7 @@
 }
 
 .App-title {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .App-intro {
@@ -20,4 +20,30 @@
 
 h4 {
   font-style: italic;
+}
+body {
+  background-color: rgb(249, 252, 255);
+}
+.raisedBox {
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 100px;
+  border: 1px solid #838485;
+  box-shadow: -1px 1px #838485,
+  -2px 2px #838485,
+  -3px 3px #838485,
+  -4px 4px #838485,
+  -5px 5px #838485;
+}
+
+.comment-btn {
+  float: right;
+}
+
+.feeling-btn {
+  float: right;
+}
+
+.understand-btn {
+  float: right;
 }

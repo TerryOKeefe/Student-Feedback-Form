@@ -32,7 +32,7 @@ function CommentForm() {
     console.log('Comment:', newComment);
 
     return(
-        <div>
+        <div className="raisedBox">
             <div>
                 <h2>Any comments you want to leave?</h2>
             </div>
@@ -45,7 +45,8 @@ function CommentForm() {
                     onChange={(event) => setNewComment(event.target.value)}
                 />
                 <Button
-                    size="medium"
+                    className="comment-btn"
+                    size="large"
                     variant="contained"
                     color="primary"
                     type="submit"
@@ -53,7 +54,7 @@ function CommentForm() {
                     Next
                 </Button>
             </form>
-            <h5>You can leave this empty</h5>
+            <h5>*No comment? You may leave this empty</h5>
         </div>
     )
 } // end CommentForm

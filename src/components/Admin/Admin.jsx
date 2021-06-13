@@ -1,10 +1,17 @@
 import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
+import DeleteIcon from '@material-ui/icons/Delete';
 import Button from '@material-ui/core/Button';
 import './Admin.css';
+import { useEffect } from 'react';
 
 // function for Admin component
 function Admin() {
+
+    // get adminFeedback on load
+    useEffect(() => {
+        adminFeedback() // load once
+    }, []);
 
      // get the data from the redux store
     const adminList = useSelector(store => store.adminReducer);
@@ -57,7 +64,12 @@ function Admin() {
                                     <td>{feedback.support}</td>
                                     <td>{feedback.comments}</td>
                                     <td>
-                                        <button>Delete</button>
+                                        <Button
+                                            size="small"
+                                            variant="contained"
+                                            color="secondary"
+                                            startIcon={<DeleteIcon />}
+                                        >Delete</Button>
                                     </td>
                                 </tr>
                             </>
@@ -71,7 +83,7 @@ function Admin() {
                 color="primary"
                 onClick={() => adminFeedback()}
             >
-                Get the Feedback
+                Check Feedback
             </Button>
         </div>
     )

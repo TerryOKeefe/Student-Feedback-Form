@@ -31,7 +31,7 @@ function ReviewFeedback() {
     }
     
     return (
-        <div>
+        <div className="raisedBox">
             <div>
                 <h2>Review Your Feedback</h2>
             </div>
@@ -41,6 +41,7 @@ function ReviewFeedback() {
                 <h3>Support: {reviewList.support}</h3>
                 <h3>Comments: {reviewList.comments}</h3>
                 <Button
+                    
                     size="medium"
                     variant="contained"
                     color="primary"

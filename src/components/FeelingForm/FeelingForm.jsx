@@ -32,9 +32,10 @@ function FeelingForm() {
     console.log('Feeling Rating:', newFeel);
 
     return (
-        <div>
+        <div className="raisedBox">
             <div>
                 <h2>How are you feeling today?</h2>
+                <h4>1 = Not Great / 5 = Amazing</h4>
             </div>
             {/* <h4>Feeling?</h4> */}
             <form onSubmit={feelingSubmit}>
@@ -42,13 +43,14 @@ function FeelingForm() {
                     id="standard-basic"
                     label="Feeling Rating"
                     type="number"
-                    required="required"
-                    placeholder="1-10"
+                    required={true}
+                    placeholder="1-5"
                     value={newFeel}
                     onChange={(event) => setNewFeel(event.target.value)}
                 />
                 <Button
-                    size="medium"
+                    className="feeling-btn"
+                    size="large"
                     variant="contained"
                     color="primary"
                     type="submit"

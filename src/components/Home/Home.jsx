@@ -12,13 +12,13 @@ function Home () {
         history.push('/feeling');
     }
     return (
-        <div>
+        <div className="raisedBox">
             <h1>Welcome!</h1>
-            <h3>Click to start</h3>
+            {/* <h3>Click to start</h3> */}
             <Button
                 variant="contained"
                 color="primary"
-                onClick={handleClick}>Start Feedback
+                onClick={handleClick}>Start Daily Reflection
             </Button>
         </div>
     )

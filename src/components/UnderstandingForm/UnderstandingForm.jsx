@@ -32,22 +32,24 @@ function UnderstandingForm() {
     console.log('Understanding Rating:', newUnderstand);
 
     return(
-        <div>
+        <div className="raisedBox">
             <div>
                 <h2>How well are you understanding the content?</h2>
+                <h4>1 = Not at all / 5 = I could teach it</h4>
             </div>
             <form onSubmit={understandingSubmit}>
                 <TextField
                     id="standard-basic"
                     label="Understand Rating" 
                     type="number"
-                    required="required"
-                    placeholder="1-10"
+                    required={true}
+                    placeholder="1-5"
                     value={newUnderstand}
                     onChange={(event) => setNewUnderstand(event.target.value)}
                 />
                 <Button
-                    size="medium"
+                    className="understand-btn"
+                    size="large"
                     variant="contained"
                     color="primary"
                     type="submit"

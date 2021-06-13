@@ -4,6 +4,7 @@ import {useHistory} from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import './SupportForm.css';
+import '../App/App.css';
 
 // function for SupportForm component
 function SupportForm() {
@@ -37,22 +38,24 @@ function SupportForm() {
     console.log('Support Rating:', newSupport);
 
     return(
-        <div>
+        <div className="raisedBox">
             <div>
                 <h2>How well are you being supported?</h2>
+                <h4>1 = No support / 5 = Amazing Support</h4>
             </div>
             <form onSubmit={supportSubmit}>
                 <TextField
                 id="standard-basic"
                 label="Support Rating"
                 type="number"
-                required="required"
-                placeholder="1-10"
+                required={true}
+                placeholder="1-5"
                 value={newSupport}
                 onChange={(event) => setNewSupport(event.target.value)}
                 />
                 <Button 
-                    size="medium"
+                    className="understand-btn"
+                    size="large"
                     variant="contained"
                     color="primary"
                     type="submit" 
