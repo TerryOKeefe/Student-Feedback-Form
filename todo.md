@@ -67,7 +67,7 @@
                 [x] - <h3>Understanding: {input rating}
                 [x] - <h3>Support: {input rating}
                 [x] - <h3>Comments: {input comments}
-            [ ] - Submit button
+            [x] - Submit button
                 [x] - On submit send data to the database
                 [x] - Send user to /submission route
         -- Save The Submission --
@@ -101,14 +101,14 @@
     [ ] - Update Scores
         [ ] - Allow the user to go back to the previous step and change their score
             [ ] - Disallow empty values to do this part
-    [ ] - Styling
+    [x] - Styling
         [x] - Improve the styling using Material-UI
             [ ] - Cards?
             [ ] - Nav bar?
             [x] - Buttons
             [ ] - Icons
             [ ] - Theme
-    [ ] - Admin Section
+    [x] - Admin Section
         [x] - /admin route
             [x] - Display all existing feedback
             [x] - Most recent feedback should display on top of the list
