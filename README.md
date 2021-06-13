@@ -4,7 +4,7 @@
 
 _Duration: 1 Week_
 
-In this project a user can complete the forms for a daily reflection. A user will start at the home screen and progress through each feedback page via clicking the corresponding buttons. Each page will ask the user to input a rating per question. The rating input fields require validation so that the user must submit a number. Once each question is asked, a comment screen will appear allowing the user to input any comments they wish. If the user does not want to add any comments they can proceed. A review page will render and show all the ratings and comments from the previous pages. Upon clicking submit, the data will be sent to a database to be used in the admin page. A thank you screen with a button to allow the user to leave new feedback will appear. The user can complete a new feedback form if they would like.
+In this project a user can complete the forms for a daily reflection. A user will start at the home screen and progress through each feedback page via clicking the corresponding buttons. Each page will ask the user to input a rating per question. The rating input fields require validation so the user must submit a number. Once each question is asked, a comment screen will appear allowing the user to input any comments they wish. If the user does not want to add any comments they can proceed. A review page will render and show all the ratings and comments from the previous pages. Upon clicking submit, the data will be sent to a database to be used in the admin page. A thank you screen with a button to allow the user to leave new feedback will appear. The user can complete a new feedback form if they would like.
 
 ## Screen Shot
 
