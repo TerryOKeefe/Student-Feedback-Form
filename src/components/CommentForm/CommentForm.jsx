@@ -3,7 +3,6 @@ import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import './CommentForm.css';
 
 // function for CommentForm component
 function CommentForm() {

@@ -1,6 +1,5 @@
 import {useHistory} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-import './Home.css';
 
 function Home () {
     // browser history

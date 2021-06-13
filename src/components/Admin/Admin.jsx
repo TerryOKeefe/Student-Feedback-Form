@@ -2,8 +2,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Button from '@material-ui/core/Button';
-import './Admin.css';
 import { useEffect } from 'react';
+import './Admin.css';
 
 // function for Admin component
 function Admin() {

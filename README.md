@@ -1,9 +1,32 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Redux Feedback Loop
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+_Duration: 1 Week_
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+## Screen Shot
+
+![Screenshot](./screenshot/home.png)
+![Screenshot](./screenshot/feeling.png)
+![Screenshot](./screenshot/understand.png)
+![Screenshot](./screenshot/support.png)
+![Screenshot](./screenshot/comments.png)
+![Screenshot](./screenshot/review.png)
+![Screenshot](./screenshot/submission.png)
+![Screenshot](./screenshot/admin.png)
+
+### Prerequisites
+
+## Installation
+
+## Usage
+
+## Built With
+
+## Acknowledgement
+
+Thanks to Prime Digital Academy who equipped and helped me to make this application a reality.
+
+## Support
+
+If you have suggestions or issues, please email me at terry.okeefe87@gmail.com

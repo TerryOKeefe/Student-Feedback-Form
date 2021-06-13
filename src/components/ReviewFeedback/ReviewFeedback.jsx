@@ -2,7 +2,6 @@ import {useSelector, useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import axios from 'axios';
 import Button from '@material-ui/core/Button';
-import './ReviewFeedback.css';
 
 // function for ReviewFeedback
 function ReviewFeedback() {

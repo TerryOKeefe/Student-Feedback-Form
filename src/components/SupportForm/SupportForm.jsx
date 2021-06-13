@@ -3,8 +3,6 @@ import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import './SupportForm.css';
-import '../App/App.css';
 
 // function for SupportForm component
 function SupportForm() {

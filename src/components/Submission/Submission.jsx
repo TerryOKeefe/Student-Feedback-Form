@@ -1,7 +1,6 @@
 import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-import './Submission.css';
 
 // function for Submission component
 function Submission() {
